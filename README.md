@@ -25,3 +25,51 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## How to use this library to any other Angular Project
+
+## Step 1
+
+ng add mtn-lib
+
+## Step 2
+
+import { MtnLibModule } from 'mtn-lib' in your AppModule;
+
+## Step 3
+
+Add with in NgModule imports array like below
+imports: [BrowserModule, MtnLibModule],
+
+## How to use carousel component
+
+## Step 1
+
+<mtn-carousel [cards]="cards" [bigCardIndex]="bigCardIndex" (carouselEvent)="carouselEventHandler($event)"></mtn-carousel>
+
+Data from Parent to Child
+
+cards is array of cards
+
+cards = [
+{
+imgPath: 'assets/images/test.png',
+title: 'Mobile internet',
+btnText: 'Start Here',
+altText:
+'Please add Path with prefix to root folder relative to root folder',
+}
+]
+
+imagePath is path of the image of card
+title is title of card
+btnText used to the label of the button in big card
+altText is used in case of image don't load.
+
+bigCardIndex is the property for showing big card.
+
+Events from carousel component
+
+carouselEvent is callBack when prev btn click , previous animation complete,
+next button click and next animation complete
+
