@@ -47,7 +47,7 @@ imports: [BrowserModule, MtnLibModule],
 
 <mtn-carousel [cards]="cards" [bigCardIndex]="bigCardIndex" (carouselEvent)="carouselEventHandler($event)"></mtn-carousel>
 
-Data from Parent to Child
+## Data from Parent to Child
 
 cards is array of cards
 
@@ -61,14 +61,17 @@ altText:
 }
 ]
 
-imagePath is path of the image of card
-title is title of card
-btnText used to the label of the button in big card
-altText is used in case of image don't load.
+imgPath  : is path of the image of card
+
+title :  is title of card
+
+btnText : used to the label of the button in big card
+
+altText : is used in case of image don't load.
 
 bigCardIndex is the property for showing big card.
 
-Events from carousel component
+## Events from carousel component
 
 carouselEvent is callBack when prev btn click , previous animation complete,
 next button click and next animation complete
