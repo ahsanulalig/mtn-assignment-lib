@@ -1,0 +1,231 @@
+.carousel-container {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  background-color: thistle;
+  width: 1200px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.carousel-container .card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 600px;
+  width: 1200px;
+}
+
+.carousel-container .nav-container {
+  width: 1200px;
+  position: relative;
+  height: 40px;
+  bottom: 120px;
+}
+
+.carousel-container .disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel-container .card {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  Width: 216px;
+  Height: 284px;
+  margin: 0px 12px;
+  transform: translateX(0%);
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.carousel-container .card:hover {
+  color: white;
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #373737 0%, #191919 100%);
+}
+
+.carousel-container .card:hover .card-title {
+  color: #F5F5F5;
+  pointer-events: none;
+}
+
+.carousel-container .largeCard {
+  transform-origin: center center;
+  box-sizing: border-box;
+  height: 556px;
+  width: 456px;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 16px 16px 12px 12px;
+  background: linear-gradient(180deg, #373737 0%, #191919 100%);
+  box-shadow: 0 8px 8px -1px rgba(255, 192, 00, 1);
+}
+
+.carousel-container .card.largeCard:hover {
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 16px 16px 12px 12px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+}
+
+.carousel-container .card.largeCard:hover .card-title {
+  color: #232323;
+  pointer-events: none;
+}
+
+.carousel-container .largeCard .start-here {
+  pointer-events: none;
+  display: block;
+  padding-top: 72px;
+}
+
+.start-here {
+  pointer-events: none;
+  display: none;
+  color: #F5F5F5;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.carousel-container .largeCard .card-title {
+  padding: 0px 12px;
+  color: #F5F5F5;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 58px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel-container .card.animateToLeft {
+  transform: translateX(-240px);
+  transition: transform 500ms ease-in-out;
+  transform-origin: center center;
+}
+
+.carousel-container .card.animateToRight {
+  transform: translateX(240px);
+  transition: transform 500ms ease-in-out;
+  transform-origin: center center;
+}
+
+.carousel-container .card.normalState {
+  transform: translateX(0px);
+}
+
+.carousel-container .card.cardFadeIn {
+  opacity: 0.1;
+  transition: transform 100ms ease-in-out;
+}
+
+.carousel-container .card.cardFadeOut {
+  opacity: 1;
+  transition: transform 50ms ease-in-out;
+}
+
+.carousel-container .card-title {
+  color: #232323;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel-container .card img {
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.carousel-container .card .img-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  padding: 56px 68px 62px 68px;
+  pointer-events: none;
+}
+
+.carousel-container .card.largeCard .img-container {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  padding: 96px 133px 100px 133px;
+  pointer-events: none;
+}
+
+.carousel-container .oval {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background-color: #FFC300;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.carousel-container .oval:hover {
+  background-color: #232323;
+}
+
+/* background-color: #FFC300; */
+.carousel-container .prev-container,
+.carousel-container .next-container {
+  display: inline-flex;
+}
+
+.carousel-container .prev-container {
+  position: absolute;
+  left: 20%;
+}
+
+.carousel-container .next-container {
+  position: absolute;
+  right: 20%;
+}
+
+.carousel-container .prev-icon {
+  background-image: url('../../assets/icons/chevron-left.svg');
+  width: 16px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+}
+
+.carousel-container .next-icon {
+  transform: rotate(180deg);
+  background-image: url('../../assets/icons/chevron-left.svg');
+  width: 16px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+}

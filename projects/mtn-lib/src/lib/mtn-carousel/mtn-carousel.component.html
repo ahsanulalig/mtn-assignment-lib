@@ -1,0 +1,24 @@
+<div class="carousel-container" [ngStyle]="{'width':innerWidth + 'px'}" >
+  <div class="card-container" [ngStyle]="{'width':innerWidth + 'px'}">
+    <div *ngFor="let card of cards; let i=index">
+      <div
+      [ngStyle]="{'transform': 'translateX(' + movedX + 'px)', 'opacity': cardOpacity}"
+      (mousedown)="mouseDown($event)" (mouseup)="mouseUp($event)" (mousemove)="mouseMove($event)"
+      class="card" [ngClass]="{'largeCard': i === bigCardIndex}">
+        <div class="img-container">
+          <img [src]="card.imgPath" [alt]="card.altText">
+        </div>
+        <div class="card-title">{{card.title}}</div>
+        <div class="start-here">{{card.btnText}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-container" [ngStyle]="{'width':innerWidth + 'px'}">
+    <div class="prev-container">
+      <div class="oval" (click)="prevClick()" [ngClass]="{'disabled': navDisabled}"><img class="prev-icon"></div>
+    </div>
+    <div class="next-container">
+      <div class="oval" (click)="nextClick()" [ngClass]="{'disabled': navDisabled}"><img class="next-icon"></div>
+    </div>
+  </div>
+</div>
