@@ -11,46 +11,46 @@ import { fromEvent, Observable, Subscription } from 'rxjs';
 export class MtnCarouselComponent implements OnInit {
   @Input() cards: Card[] = [
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Mobile internet',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Home internet',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder ',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Get a device',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Add a phone line',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Upgrade',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Fixed the issue',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
     {
-      imgPath: '../../assets/images/test.png',
+      imgPath: 'assets/images/test.png',
       title: 'Customer Care',
       btnText: 'Start Here',
-      altText: 'Please add Path with prefix to root folder ../../',
+      altText: 'Please add Path with prefix to root folder',
     },
   ];
 

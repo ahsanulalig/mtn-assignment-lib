@@ -212,7 +212,7 @@
 }
 
 .carousel-container .prev-icon {
-  background-image: url('../../assets/icons/chevron-left.svg');
+  background-image: url('assets/icons/chevron-left.svg');
   width: 16px;
   height: 28px;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@
 
 .carousel-container .next-icon {
   transform: rotate(180deg);
-  background-image: url('../../assets/icons/chevron-left.svg');
+  background-image: url('assets/icons/chevron-left.svg');
   width: 16px;
   height: 28px;
   background-repeat: no-repeat;
