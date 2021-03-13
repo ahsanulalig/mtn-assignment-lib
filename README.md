@@ -74,9 +74,13 @@ bigCardIndex is the property for showing big card.
 ## Events from carousel component
 
 carouselEvent is callBack 
+
 when prev btn click , 
+
 previous animation complete,
+
 next button click 
+
 and next animation complete
 
 
