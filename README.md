@@ -43,7 +43,7 @@ imports: [BrowserModule, MtnLibModule],
 
 ## How to use carousel component
 
-## Step 3 Configuration
+## Step 4 Configuration
 
 <mtn-carousel [cards]="cards" [bigCardIndex]="bigCardIndex" (carouselEvent)="carouselEventHandler($event)"></mtn-carousel>
 
