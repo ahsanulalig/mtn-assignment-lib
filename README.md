@@ -75,5 +75,7 @@ next button click and next animation complete
 
 
 ## If you want to get updated version then
+
 npm uninstall mtn-lib
+
 npm install mtn-lib
