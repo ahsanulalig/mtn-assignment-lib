@@ -73,3 +73,7 @@ Events from carousel component
 carouselEvent is callBack when prev btn click , previous animation complete,
 next button click and next animation complete
 
+
+## If you want to get updated version then
+npm uninstall mtn-lib
+npm install mtn-lib
